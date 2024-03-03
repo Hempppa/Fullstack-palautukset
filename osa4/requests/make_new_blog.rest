@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbXBwcGEiLCJpZCI6IjY1ZGI5NDgyNGE1YjA4NTY4M2VhMzE3MCIsImlhdCI6MTcwODg4OTI0N30.xxZMYJNxzq1-7brzlC2IdQzVcbzTJeoQcFoVnr9-zm4
+
+{
+    "title": "minun blogini",
+    "author": "hempppa",
+    "url": "www.www.com",
+    "likes": 0
+}
