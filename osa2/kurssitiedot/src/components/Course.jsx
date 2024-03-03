@@ -16,9 +16,7 @@ const Header = (props) => {
 
 const Content = (props) => {
   return (
-    props.parts.map(part =>
-      <Part part={part} />
-      )
+    props.parts.map(part => <Part part={part} key={part.name}/>)
   )
 }
 
@@ -34,7 +32,7 @@ const Total = (props) => {
   const exercises = props.parts.map(part => part.exercises)
   return(
     <p>
-    Number of exercises {exercises.reduce((accumulator, currentValue) => accumulator + currentValue)}
+    <b>total of {exercises.reduce((accumulator, currentValue) => accumulator + currentValue)} exercises</b>
     </p>
   )
 }

@@ -14,7 +14,7 @@ const App = () => {
     phonebook.getAll().then(data => setPersons(data))
   }, [])
 
-  const personsToShow = persons.filter(person => person.name.includes(search))
+  const personsToShow = persons.filter(person => person.name.toLowerCase().includes(search.toLowerCase()))
 
   const addPerson = (event) => {
     event.preventDefault()
